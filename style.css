@@ -5,7 +5,8 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 @import url("https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Jomhuria&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -11514,15 +11515,9 @@ body {
 /* article {
     background-color: gray;
 } */
-h1, .h1 {
-  font-size: 45px;
-  color: blanchedalmond;
-  width: 100%;
-}
-
 nav.flex-container {
   margin: auto;
-  font-size: 2.5rem;
+  font-size: 2rem;
   letter-spacing: .2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11562,6 +11557,12 @@ nav.flex-container {
 }
 
 /* ACA METI MANO EN ALGUNAS COSAS, DESPUES BORRA ESTE COMENTARIO */
+h1, .h1 {
+  font-size: 45px;
+  color: white;
+  width: 100%;
+}
+
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   font-family: 'Encode Sans SC', sans-serif;
 }
@@ -11614,9 +11615,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #1f1f1f;
-  -webkit-box-shadow: rgba(85, 85, 85, 0.2) 0px 8px 24px;
-          box-shadow: rgba(85, 85, 85, 0.2) 0px 8px 24px;
+  background-color: white;
+  color: black;
 }
 
 #img_oscura {
@@ -11665,12 +11665,14 @@ aside {
   }
 }
 
-.galeria img:hover {
+#galeria img:hover {
   -webkit-animation: scaleImg;
           animation: scaleImg;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
   /* transform: scale(1.2); */
+  color: black;
+  background-color: gray;
 }
 
 .titulo__general {
@@ -11693,8 +11695,8 @@ footer {
   background-color: #1f1f1f;
   -webkit-box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
           box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-  font-size: 2rem;
-  font-family: 'Jomhuria', cursive;
+  font-size: 1rem;
+  font-family: 'Encode Sans SC', sans-serif;
   padding: 1rem;
 }
 
@@ -11704,8 +11706,9 @@ ul {
 
 a {
   text-decoration: none;
-  color: blanchedalmond;
-  font-family: 'Jomhuria', cursive;
+  color: white;
+  font-family: 'Encode Sans SC', sans-serif;
+  font-size: 0.90rem;
 }
 
 a a:active {
@@ -11740,7 +11743,7 @@ nav.menu__models {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  padding: 0;
+  padding: .2rem;
   margin: 0;
   font-size: 2rem;
   letter-spacing: .2rem;
@@ -11750,12 +11753,110 @@ nav.menu__models ul li a {
   display: block;
   padding: 1rem;
   text-decoration: none;
-  color: blanchedalmond;
+  color: white;
+  font-family: 'Encode Sans SC', sans-serif;
 }
 
 nav.menu__models ul li a:hover {
   background-color: rgba(85, 47, 47, 0.329);
-  color: blanchedalmond;
+  color: white;
   border-radius: .5rem;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #383A3F;
+  font-family: "Varela Round", sans-serif;
+}
+
+.card {
+  background: #1F2124;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  margin: 50px 20px 20px 20px;
+  width: calc(33.3333% - 40px);
+  /* 1/3 minus the margins (20+20) */
+  padding: 20px;
+  text-align: center;
+  color: white;
+  float: left;
+}
+
+@media (max-width: 768px) {
+  .card {
+    margin: 10px 20px;
+    width: calc(100% - 40px);
+  }
+  .card:first-child {
+    margin-top: 20px;
+  }
+}
+
+.card:nth-child(2) {
+  margin: 20px 0px;
+  width: 33.3333%;
+  padding: 50px 20px;
+}
+
+@media (max-width: 768px) {
+  .card:nth-child(2) {
+    margin: 10px 20px;
+    width: calc(100% - 40px);
+  }
+}
+
+.card .title {
+  font-size: 25px;
+}
+
+.card .icon {
+  margin: 50px 0;
+}
+
+.card .icon svg {
+  width: 100px;
+  height: 100px;
+}
+
+.card .icon svg path {
+  fill: #272444;
+}
+
+.card .features ul {
+  padding: 0;
+  margin: 20px 0 50px 0;
+  list-style-type: none;
+}
+
+.card .features ul li {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.card .features ul li span {
+  border-bottom: 2px dotted #272444;
+}
+
+.card .btn {
+  display: block;
+  background: #272444;
+  color: white;
+  padding: 15px 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.9);
+          box-shadow: rgba(0, 0, 0, 0.9);
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  text-decoration: none;
+}
+
+.card .btn:hover {
+  background: #272444;
 }
 /*# sourceMappingURL=style.css.map */
