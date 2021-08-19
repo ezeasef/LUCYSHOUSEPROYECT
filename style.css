@@ -11649,8 +11649,8 @@ aside {
             transform: scale(1);
   }
   100% {
-    -webkit-transform: scale(5);
-            transform: scale(5);
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
   }
 }
 
@@ -11660,8 +11660,8 @@ aside {
             transform: scale(1);
   }
   100% {
-    -webkit-transform: scale(5);
-            transform: scale(5);
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
   }
 }
 
@@ -11671,8 +11671,6 @@ aside {
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
   /* transform: scale(1.2); */
-  color: black;
-  background-color: gray;
 }
 
 .titulo__general {
