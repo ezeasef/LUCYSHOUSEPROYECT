@@ -81,7 +81,10 @@ h4 {
     font-family: 'Encode Sans SC', sans-serif;
 }
 
-#grilla {
+#grilla { display: grid; }
+@media screen and (min-width: 320px){
+  
+  #grilla {
     display: grid;
     grid-template-areas:
     "header    header    header"
@@ -93,6 +96,7 @@ h4 {
     /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; */
     grid-column-gap: 10px;
     margin: 0 .5rem 0 .5rem;;
+}
 }
 #grid_menu {
   grid-area: contacto;

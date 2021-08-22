@@ -11570,30 +11570,28 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 #grilla {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "header    header    header" "contacto    contacto    contacto "  "nav    seccion     img_oscura"  "nav    seccion     noticias"  "nav    seccion     noticias"  "footer  footer      footer";
-  /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; */
-  grid-column-gap: 10px;
-  margin: 0 .5rem 0 .5rem;
+}
+
+@media screen and (min-width: 320px) {
+  #grilla {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "header    header    header" "contacto    contacto    contacto "  "nav    seccion     img_oscura"  "nav    seccion     noticias"  "nav    seccion     noticias"  "footer  footer      footer";
+    /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; */
+    grid-column-gap: 10px;
+    margin: 0 .5rem 0 .5rem;
+  }
 }
 
 #grid_menu {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
   grid-area: contacto;
 }
 
 #diarioperfil {
-  -ms-grid-row: 4;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 3;
   grid-area: noticias;
 }
 
 #seccion {
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 3;
-  -ms-grid-column: 2;
   grid-area: seccion;
 }
 
@@ -11601,9 +11599,6 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
     border: 1px solid white;
 } */
 #banner {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
   grid-area: header;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11620,8 +11615,6 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 }
 
 #img_oscura {
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
   grid-area: img_oscura;
 }
 
@@ -11630,16 +11623,10 @@ section#productos {
 }
 
 nav {
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 3;
-  -ms-grid-column: 1;
   grid-area: nav;
 }
 
 aside {
-  -ms-grid-row: 4;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 3;
   grid-area: noticias;
 }
 
@@ -11686,9 +11673,6 @@ aside {
 }
 
 footer {
-  -ms-grid-row: 6;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
   grid-area: footer;
   background-color: #1f1f1f;
   -webkit-box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
