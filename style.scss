@@ -22,43 +22,44 @@ body {
 
 
 
-nav.flex-container {
-  margin: auto;
-  font-size: 2rem;
-  letter-spacing: .2rem;
-  display: flex;
-  justify-content: flex-end;
-  color: white;
+// nav.flex-container {
+//   margin: auto;
+//   font-size: 2rem;
+//   letter-spacing: .2rem;
+//   display: flex;
+//   justify-content: flex-end;
+//   color: white;
   
 
-}
+// }
 
 
 
 
-.flex-container ul {
-  display: flex;
-  flex-flow: row;
-  justify-content: space-around;
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
+// .flex-container ul {
+//   display: flex;
+//   flex-flow: row;
+//   justify-content: space-around;
+// 	list-style-type: none;
+// 	margin: 0;
+// 	padding: 0;
+// 	overflow: hidden;
   
-li {
-  margin: 1rem 1.5rem 1rem 1.5rem;
+// li {
+//   margin: 1rem 1.5rem 1rem 1.5rem;
   
-  a {
-    padding: .5rem;
-    :hover {
-      background-color: rgb(47, 47, 47);
-      border-radius: .5rem;
+//   a {
+//     padding: .5rem;
+//     :hover {
+//       // background-color: rgb(47, 47, 47);
+//       background-color: rgb(47, 47, 47);
+//       border-radius: .5rem;
       
       
-    }
-    }
-  }
-}
+//     }
+//     }
+//   }
+// }
 
  
 
@@ -67,7 +68,6 @@ li {
 
 
 
-/* ACA METI MANO EN ALGUNAS COSAS, DESPUES BORRA ESTE COMENTARIO */
 
 h1 {
     font-size: 45px;
@@ -81,10 +81,7 @@ h3,
 h4 {
     font-family: 'Encode Sans SC', sans-serif;
 }
-
-#grilla { display: grid; }
-@media screen and (min-width: 320px){
-  
+ 
   #grilla {
     display: grid;
     grid-template-areas:
@@ -98,9 +95,10 @@ h4 {
     grid-column-gap: 10px;
     margin: 0 .5rem 0 .5rem;;
 }
-}
+
 #grid_menu {
   grid-area: contacto;
+  justify-content: flex-end;
 }
 
 #diarioperfil {
